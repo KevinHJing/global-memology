@@ -34,6 +34,7 @@
         
         // Start a simple rotation animation
         var before = null;
+<<<<<<< Updated upstream
         requestAnimationFrame(function animate(now) {
             var c = earth.getPosition();
             var elapsed = before? now - before: 0;
@@ -50,6 +51,17 @@
             requestAnimationFrame(animate);
         });
       }
+=======
+            requestAnimationFrame(function animate(now) {
+                var c = earth.getPosition();
+                var elapsed = before? now - before: 0;
+                before = now;
+                earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
+                console.log(now);
+                requestAnimationFrame(animate);
+            });
+        }
+>>>>>>> Stashed changes
     </script>
 
 </html>
