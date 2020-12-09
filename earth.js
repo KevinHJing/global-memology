@@ -21,4 +21,4 @@ function initialize() {
             console.log(now);
             requestAnimationFrame(animate);
         });
-    }
+}
