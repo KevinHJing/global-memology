@@ -7,7 +7,7 @@ function initialize() {
     marker2.bindPopup("<b>Cairo</b><br>Yay, you found me!", {maxWidth: 120, closeButton: true}).openPopup();
 
     
-    earth.setView([51.505, 0], 6);
+    earth.setView([20, -105], 2.5);
     
     // Start a simple rotation animation
     var before = null;
