@@ -12,6 +12,12 @@ body {
     position: absolute !important;
 }
 
-#title{
-    color:white;
+#logo {
+    background-image: url('assets/logo.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 650px;
+    padding-top: 20px;
 }
