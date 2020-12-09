@@ -11,3 +11,7 @@ body {
     left: 0;
     position: absolute !important;
 }
+
+#title{
+    color:white;
+}

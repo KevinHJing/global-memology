@@ -11,7 +11,7 @@ function initialize() {
     
     // Start a simple rotation animation
     var before = null;
-        requestAnimationFrame(function animate(now) {
+        requestAnimationFrame(function animate(now){
             var c = earth.getPosition();
             var elapsed = before? now - before: 0;
             before = now;
@@ -20,3 +20,4 @@ function initialize() {
             requestAnimationFrame(animate);
         });
 }
+
