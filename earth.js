@@ -5,7 +5,9 @@ function initialize() {
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
     var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
     marker2.bindPopup("<b>Cairo</b><br>Yay, you found me!", {maxWidth: 120, closeButton: true}).openPopup();
-
+    earth.setZoom(5);
+    alert('Current zoom is: ' + Math.round(earth.getZoom()));
+    
     
     earth.setView([20, -105], 2.5);
     
@@ -15,8 +17,15 @@ function initialize() {
             var c = earth.getPosition();
             var elapsed = before? now - before: 0;
             before = now;
-            earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
-            console.log(now);
+            
+            if(Math.round(earth.getZoom()) >= 5)
+            {
+                earth.setCenter([c[0], c[1]]);
+            }
+            else
+            {
+                earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
+            }
             requestAnimationFrame(animate);
         });
 }
