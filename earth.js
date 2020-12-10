@@ -27,10 +27,11 @@ function initialize() {
     marker5.bindPopup("<img src='assets/Memes/Portugal/Screenshot_2020-12-09 Pin on Glumițe.png'>", {maxWidth: 508, closeButton: true});//Portugal
     var marker6 = WE.marker([60, 17]);
     marker6.bindPopup("<img src='assets/Memes/Sweden/Screenshot_2020-12-09 Pin på Skratta.png'>", {maxWidth: 406, closeButton: true});//Sweden
-    //Vietnam
+    var marker7 = WE.marker([15, 105]);
+    marker7.bindPopup("<img src='assets/Memes/Vietnam/meme_vietnam.jpg'>", {maxWidth: 400, closeButton: true}); //Vietnam
 
     // array of markers
-    var markerArr = [/*marker, marker2,*/ marker3, marker4, marker5, marker6];
+    var markerArr = [/*marker, marker2,*/ marker3, marker4, marker5, marker6, marker7];
     
     // animation
     var before = null;
