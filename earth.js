@@ -2,20 +2,19 @@ function initialize() {
     //initializing an earth
     var earth = new WE.map('earth_div');
     WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(earth);
-    var marker = WE.marker([51.5, -0.09]).addTo(earth);
-    marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
-    var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
-    marker2.bindPopup("<b>Pablo</b><br>You're stupid!", {maxWidth: 120, closeButton: true}).openPopup();
+
+    if(earth.getZoom() > 5 )
+    {
+        var marker = WE.marker([51.5, -0.09]).addTo(earth);
+        marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
+        var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
+        marker2.bindPopup("<b>Pablo</b><br>You're stupid!", {maxWidth: 120, closeButton: true}).openPopup();
+    }
+    
     
     earth.setView([20, -105], 2.5);
+    
 
-    function init() {
-        earth = WE.map('earth_div', {
-          center: [36.057944835, -112.18688965],
-          zoom: 10,
-          dragging: true,
-          scrollWheelZoom: true
-        });
     
     // Start a simple rotation animation
     var before = null;
@@ -34,6 +33,6 @@ function initialize() {
             }
             requestAnimationFrame(animate);
         });
-    }
+    
 }
 
