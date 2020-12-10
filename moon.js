@@ -1,4 +1,4 @@
-function initialize() {
+function initialize1() {
     //initializing an earth
     var moon = new WE.map('moon_div');
     WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(moon);
