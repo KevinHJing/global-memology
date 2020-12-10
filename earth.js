@@ -16,12 +16,18 @@ function initialize() {
 
     // initialize markers and pop ups
     var marker = WE.marker([51.5, -0.09]);
-    marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true});
+    marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}); //UK
     var marker2 = WE.marker([51.5, 10]);
-    marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true});
+    marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true}); //Germany
+    var marker3 = WE.marker([35, 135]);
+    marker3.bindPopup("<img src='assets/Memes/Japan/jp_image.png'>", {maxWidth: 525, closeButton: true}); //Japan
+    //Mexico
+    //Portugal
+    //Sweden
+    //Vietnam
 
     // array of markers
-    var markerArr = [marker, marker2];
+    var markerArr = [marker, marker2, marker3];
     
     // animation
     var before = null;
