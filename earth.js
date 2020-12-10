@@ -13,40 +13,71 @@ function initialize() {
         
     }
     */
-    
-    
-    
 
+    // initialize markers and pop ups
+    var marker = WE.marker([51.5, -0.09]);
+    marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true});
+    var marker2 = WE.marker([51.5, 10]);
+    marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true});
+
+    // array of markers
+    var markerArr = [marker, marker2];
     
-    // Start a simple rotation animation
+    // animation
     var before = null;
-        requestAnimationFrame(function animate(now){
-            var c = earth.getPosition();
-            var elapsed = before? now - before: 0;
-            before = now;
-            if(Math.round(earth.getZoom()) >= 4)
-            {
-                earth.setCenter([c[0], c[1]]);
+    requestAnimationFrame(
+        function animate(now){
+            
+            
 
-                //var marker3 = WE.marker([10, 10]).addTo(earth);
-                //marker3.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {closeButton: true}).openPopup();
+            // if zoomed out
+            if (earth.getZoom() < 4.5){
 
-                if(Math.round(earth.getZoom()) >= 5)
-                {
-                    var marker = WE.marker([51.5, -0.09]).addTo(earth);
-                    marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}).openPopup();
-                    var marker2 = WE.marker([51.5, 10]).addTo(earth);
-                    marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true}).openPopup();
-                    earth.setZoom(4);
-                }
-                
-            }
-            else
-            {
+                var c = earth.getPosition();
+                // animate rotation
+                var elapsed = before? now - before: 0;
+                before = now;
+
                 earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
             }
+            // if zoomed in
+            else{
+                // no rotation
+                // for all markers
+                for (var i=0; i<markerArr.length; i++){
+                    // add to earth
+                    markerArr[i].addTo(earth);
+                    // open pop up
+                    markerArr[i].openPopup();
+                }
+            }
+
+
+            
+
+            // if(Math.round(earth.getZoom()) >= 4.5)
+            // {
+            //     earth.setCenter([c[0], c[1]]);
+
+            //     //var marker3 = WE.marker([10, 10]).addTo(earth);
+            //     //marker3.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {closeButton: true}).openPopup();
+
+            //     if(Math.round(earth.getZoom()) >= 4.5)
+            //     {
+            //         var marker = WE.marker([51.5, -0.09]).addTo(earth);
+            //         marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}).openPopup();
+            //         var marker2 = WE.marker([51.5, 10]).addTo(earth);
+            //         marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true}).openPopup();
+            //         earth.setZoom(4);
+            //     }
+                
+            // }
+            // else
+            // {
+                
+            // }
             requestAnimationFrame(animate);
-        });
+    });
     
 }
 
