@@ -7,7 +7,7 @@ function initialize1() {
     var marker2 = WE.marker([30.058056, 31.228889]).addTo(moon);
     marker2.bindPopup("<b>Pablo</b><br>You're stupid!", {maxWidth: 120, closeButton: true}).openPopup();
     
-    moon.setView([50, -125], 0);
+    moon.setView([20, -105], 2.5);
     
     // Start a simple rotation animation
     var before = null;
