@@ -8,6 +8,14 @@ function initialize() {
     marker2.bindPopup("<b>Pablo</b><br>You're stupid!", {maxWidth: 120, closeButton: true}).openPopup();
     
     earth.setView([20, -105], 2.5);
+
+    function init() {
+        earth = WE.map('earth_div', {
+          center: [36.057944835, -112.18688965],
+          zoom: 10,
+          dragging: true,
+          scrollWheelZoom: true
+        });
     
     // Start a simple rotation animation
     var before = null;
