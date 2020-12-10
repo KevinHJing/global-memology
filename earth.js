@@ -34,7 +34,7 @@ function initialize() {
                 if(Math.round(earth.getZoom()) >= 5)
                 {
                     var marker = WE.marker([51.5, -0.09]).addTo(earth);
-                    marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
+                    marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}).openPopup();
                     var marker2 = WE.marker([51.5, 10]).addTo(earth);
                     marker2.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {maxWidth: 500, closeButton: true}).openPopup();
                     earth.setZoom(4);
