@@ -12,7 +12,7 @@ function initializeMoon() {
 
     moon.setView([20, -105], 2.5);
     
-    /*
+    
     // Start a simple rotation animation
     var before = null;
         requestAnimationFrame(function animate(now){
@@ -22,5 +22,5 @@ function initializeMoon() {
             moon.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
             requestAnimationFrame(animate);
         });
-        */
+        
 }
