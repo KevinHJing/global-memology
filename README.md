@@ -18,6 +18,3 @@ Download the code from GitHub onto your computer.
 
 ## Usage
 Open index.html in VS Code. From the toolbar, click "Run" and then "Run Without Debugging". Then select the preferred running method on VS Code. 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
