@@ -8,8 +8,8 @@ function initialize() {
     marker.bindPopup("<img src='assets/Memes/UK/uk_image.jpg'>", {maxWidth: 250, closeButton: false}).openPopup(); //UK
     var marker2 = WE.marker([51.5, 10]);
     marker2.bindPopup("<img src='assets/Memes/Germany/germany_image.jpg'>", {maxWidth: 250, closeButton: false}).openPopup(); //Germany
-    var marker3 = WE.marker([35, 135]);
-    marker3.bindPopup("<img src='assets/Memes/Japan/japan_image.jpg'>", {maxWidth: 250, closeButton: false}).openPopup(); //Japan
+    var marker3 = WE.marker([40, 115]);
+    marker3.bindPopup("<img src='assets/Memes/Japan/japan_image.jpg'>", {maxWidth: 250, closeButton: false}).openPopup(); //China
     var marker4 = WE.marker([24, 255]);
     marker4.bindPopup("<img src='assets/Memes/Mexico/mx_image.jpg'>", {maxWidth: 250, closeButton: false}).openPopup(); //Mexico
     var marker5 = WE.marker([40, -8]);
