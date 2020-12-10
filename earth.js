@@ -27,6 +27,10 @@ function initialize() {
             if(Math.round(earth.getZoom()) >= 4)
             {
                 earth.setCenter([c[0], c[1]]);
+
+                var marker3 = WE.marker([10, 10]).addTo(earth);
+                marker3.bindPopup("<img src='assets/Memes/Germany/c86a1e3837abd60c5a070efc166c8cbb.jpg'>", {closeButton: true}).openPopup();
+
                 if(Math.round(earth.getZoom()) >= 5)
                 {
                     var marker = WE.marker([51.5, -0.09]).addTo(earth);
