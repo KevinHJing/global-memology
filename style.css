@@ -22,3 +22,8 @@ body {
     max-height: 100vh;
     margin: auto;
 }
+
+#signature{
+    color: white;
+    margin: auto;
+}
