@@ -12,6 +12,8 @@ body {
     bottom: 0;
     left: 0;
     position: absolute !important;
+    /*important is the reason we can't move the earth while having 
+      moon as the moons important takes priority (i think)*/
 }
 
 #moon_div {
