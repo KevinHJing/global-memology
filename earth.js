@@ -31,7 +31,7 @@ function initialize() {
     marker7.bindPopup("<img src='assets/Memes/Vietnam/meme_vietnam.jpg'>", {maxWidth: 400, closeButton: true}).openPopup(); //Vietnam
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
     
     // animation
     var before = null;
@@ -49,6 +49,12 @@ function initialize() {
                 before = now;
 
                 earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
+                for (var i=0; i<markerArr.length; i++){
+                    // add to earth
+                    markerArr[i].removeTo;
+                    // open pop up
+                    markerArr[i].closePopup();
+                }
             }
             // if zoomed in
             else{
