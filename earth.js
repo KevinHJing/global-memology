@@ -37,7 +37,7 @@ function initialize() {
             console.log(earth.getZoom());
 
             // logic for animation and adding/removing markers
-            if (earth.getZoom() < 3.3){
+            if (earth.getZoom() < 5){
 
                 var c = earth.getPosition();
                 // animate rotation
