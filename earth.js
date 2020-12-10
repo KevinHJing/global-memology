@@ -20,7 +20,7 @@ function initialize() {
     marker7.bindPopup("<img src='assets/Memes/Vietnam/meme_vietnam.jpg'>", {maxWidth: 400, closeButton: true}).openPopup(); //Vietnam
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
     
     // animation
     var before = null;
@@ -59,6 +59,8 @@ function initialize() {
                 for (var i=0; i<markerArr.length; i++){
                     // add to earth
                     markerArr[i].addTo(earth);
+                    // open popup
+                    markerArr[i].openPopup();
                 }
             }
 
