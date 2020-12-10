@@ -1,1 +1,1 @@
-# global-memology
+Global Memology
