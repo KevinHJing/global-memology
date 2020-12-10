@@ -34,7 +34,7 @@ function initialize() {
         function animate(now){
             
             // for testing purposes
-            console.log(earth.getZoom());
+            //console.log(earth.getZoom());
 
             // logic for animation and adding/removing markers
             if (earth.getZoom() < 5){
