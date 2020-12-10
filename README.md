@@ -1,2 +1,4 @@
-# This is Global Memology
+# Global Memology
 **A project developed by Kevin Jing, Christoper Merino, and Pablo Tayun**
+
+
