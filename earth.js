@@ -3,17 +3,6 @@ function initialize() {
     var earth = new WE.map('earth_div');
     WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(earth);
 
-    
-    /*if(Math.round(earth.getZoom()) > 5 )
-    {
-        var marker = WE.marker([51.5, -0.09]).addTo(earth);
-        marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
-        var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
-        marker2.bindPopup("<b>Pablo</b><br>You're stupid!", {maxWidth: 120, closeButton: true}).openPopup();
-        
-    }
-    */
-
     // initialize markers and pop ups
     var marker = WE.marker([51.5, -0.09]);
     marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}).openPopup(); //UK
