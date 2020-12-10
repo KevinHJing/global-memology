@@ -29,9 +29,11 @@ function initialize() {
     marker6.bindPopup("<img src='assets/Memes/Sweden/Screenshot_2020-12-09 Pin på Skratta.png'>", {maxWidth: 406, closeButton: true});//Sweden
     var marker7 = WE.marker([15, 105]);
     marker7.bindPopup("<img src='assets/Memes/Vietnam/meme_vietnam.jpg'>", {maxWidth: 400, closeButton: true}); //Vietnam
+    var marker8 = WE.marker([34, 242]);
+    marker8.bindPopup("<img src='assets/Memes/US/fucla.png'>", {maxWidth: 480, closeButton: true}); //USA
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8];
     
     // animation
     var before = null;
