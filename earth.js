@@ -25,11 +25,12 @@ function initialize() {
     marker4.bindPopup("<img src='assets/Memes/Mexico/8e30176d12e00e0a655d27ef55beff60.jpeg'>", {maxWidth: 640, closeButton: true}); //Mexico
     var marker5 = WE.marker([40, -8]);
     marker5.bindPopup("<img src='assets/Memes/Portugal/Screenshot_2020-12-09 Pin on Glumițe.png'>", {maxWidth: 508, closeButton: true});//Portugal
-    //Sweden
+    var marker6 = WE.marker([60, 17]);
+    marker6.bindPopup("<img src='assets/Memes/Sweden/Screenshot_2020-12-09 Pin på Skratta.png'>", {maxWidth: 406, closeButton: true});//Sweden
     //Vietnam
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5];
+    var markerArr = [/*marker, marker2,*/ marker3, marker4, marker5, marker6];
     
     // animation
     var before = null;
