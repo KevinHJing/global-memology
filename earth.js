@@ -22,7 +22,9 @@ function initialize() {
     marker8.bindPopup("<img src='assets/Memes/US/USA_image.jpg'>", {maxWidth: 250, closeButton: true}); //USA
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8];
+    
+    
     
     // animation
     var before = null;
