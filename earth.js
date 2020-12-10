@@ -37,13 +37,16 @@ function initialize() {
     
     // animation
     var before = null;
+    // animation
+    var before = null;
     requestAnimationFrame(
         function animate(now){
             
-            
+            // for testing purposes
+            console.log(earth.getZoom());
 
-            // if zoomed out
-            if (earth.getZoom() < 4.5){
+            // logic for animation and adding/removing markers
+            if (earth.getZoom() < 3.3){
 
                 var c = earth.getPosition();
                 // animate rotation
@@ -51,10 +54,22 @@ function initialize() {
                 before = now;
 
                 earth.setCenter([c[0], c[1]+ 0.1*(elapsed/30)]);
+
+                // for all markers
+                for (var i=0; i<markerArr.length; i++){
+                    markerArr[i].closePopup();
+                    
+                    // remove from earth
+                    markerArr[i].removeFrom(earth);
+                    
+                }
+
             }
             // if zoomed in
             else{
-                // no rotation
+                // no rotation (keeps earth at same place when zoomed in)
+                before = now;
+
                 // for all markers
                 for (var i=0; i<markerArr.length; i++){
                     // add to earth
