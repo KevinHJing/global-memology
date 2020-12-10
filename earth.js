@@ -7,7 +7,7 @@ function initialize() {
     var marker = WE.marker([51.5, -0.09]);
     marker.bindPopup("<img src='assets/Memes/UK/the-current-state-of-the-uk.png'>", {maxWidth: 800, closeButton: true}).openPopup(); //UK
     var marker2 = WE.marker([51.5, 10]);
-    marker2.bindPopup("<img src='assets/Memes/Germany/germany_image.jpg'>", {maxWidth: 500, closeButton: true}).openPopup(); //Germany
+    marker2.bindPopup("<img src='assets/Memes/Germany/germany_image.jpg'>", {maxWidth: 250, closeButton: true}).openPopup(); //Germany
     var marker3 = WE.marker([35, 135]);
     marker3.bindPopup("<img src='assets/Memes/Japan/jp_image.png'>", {maxWidth: 525, closeButton: true}).openPopup(); //Japan
     var marker4 = WE.marker([24, 255]);
