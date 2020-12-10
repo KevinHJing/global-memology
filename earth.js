@@ -34,5 +34,5 @@ function initialize() {
             }
             requestAnimationFrame(animate);
         });
-}
+}}
 
