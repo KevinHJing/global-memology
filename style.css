@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: black;
     background-image: url('assets/spaceimage.png');
+    height: 100%;
 }
 
 #earth_div {
@@ -34,5 +35,9 @@ body {
 
 #signature{
     color: white;
-    margin: auto;
+    width: 100%;
+    bottom: 0; 
+    text-align: center;
+    position: fixed;
+    
 }
