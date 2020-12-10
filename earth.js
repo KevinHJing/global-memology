@@ -31,7 +31,7 @@ function initialize() {
     marker7.bindPopup("<img src='assets/Memes/Vietnam/meme_vietnam.jpg'>", {maxWidth: 400, closeButton: true}); //Vietnam
 
     // array of markers
-    var markerArr = [/*marker, marker2,*/ marker3, marker4, marker5, marker6, marker7];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
     
     // animation
     var before = null;
