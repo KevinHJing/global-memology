@@ -19,10 +19,12 @@ function initialize() {
     var marker7 = WE.marker([15, 105]);
     marker7.bindPopup("<img src='assets/Memes/Vietnam/vietnam_image.jpg'>", {maxWidth: 250, closeButton: true}).openPopup(); //Vietnam
     var marker8 = WE.marker([34, 242]);
-    marker8.bindPopup("<img src='assets/Memes/US/USA_image.jpg'>", {maxWidth: 250, closeButton: true}); //USA
+    marker8.bindPopup("<img src='assets/Memes/US/USA_image.jpg'>", {maxWidth: 250, closeButton: true}).openPopup(); //USA
 
     // array of markers
-    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7];
+    var markerArr = [marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8];
+    
+    
     
     // animation
     var before = null;
