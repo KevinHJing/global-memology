@@ -5,10 +5,13 @@
 ## Contributors
 - Kevin Jing
     - [LinkedIn](https://www.linkedin.com/in/kevin-jing-248958195/)
+    - [GitHub](https://github.com/khjing8/)
 - Christopher Merino
     - [LinkedIn](https://www.linkedin.com/in/chrismerinobrito/)
+    - [GitHub](https://github.com/ptay26)
 - Pablo Tayun
     - [LinkedIn](https://www.linkedin.com/in/pablotayunmazariegos/)
+    - [GitHub](https://github.com/cmerino01)
 
 ## Installation
 Download the code from GitHub onto your computer.
