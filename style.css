@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
+    background-image: url('assets/space.gif');
 }
 
 #earth_div {
@@ -27,5 +28,10 @@ body {
 .center-fit {
     max-width: 100%;
     max-height: 100vh;
+    margin: auto;
+}
+
+#signature{
+    color: white;
     margin: auto;
 }
