@@ -59,7 +59,7 @@ function initialize() {
                 for (var i=0; i<markerArr.length; i++){
                     // add to earth
                     markerArr[i].addTo(earth);
-                    // open pop up
+                    // open popup
                     markerArr[i].openPopup();
                 }
             }
