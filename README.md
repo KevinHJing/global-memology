@@ -7,7 +7,7 @@
 
 ## Contributors
 - Kevin Jing
-    - [LinkedIn](https://www.linkedin.com/in/kevin-jing-248958195/), [GitHub](https://github.com/kevjing/)
+    - [LinkedIn](https://www.linkedin.com/in/kevinjing/), [GitHub](https://github.com/kevjing/)
 - Christopher Merino
     - [LinkedIn](https://www.linkedin.com/in/chrismerinobrito/), [GitHub](https://github.com/ptay26)
 - Pablo Tayun
