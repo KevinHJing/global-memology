@@ -13,8 +13,13 @@
 - Pablo Tayun
     - [LinkedIn](https://www.linkedin.com/in/pablotayunmazariegos/), [GitHub](https://github.com/cmerino01)
 
+## Tech Stack
+- JavaScript
+- HTML/CSS
+- [WebGLEarth JavaScript API](https://www.webglearth.com/)
+
 ## Installation
-Download the code from GitHub onto your computer.
+Download the code from GitHub directly onto your computer.
 
 ## Usage
 Open index.html in VS Code. From the toolbar, click "Run" and then "Run Without Debugging". Then select the preferred running method on VS Code. 
